@@ -1,4 +1,4 @@
-# my theme
+# theme of udemy
 
 下記のUdemyの講座を参考に実習。
 
