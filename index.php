@@ -58,7 +58,7 @@
           <?php while (have_posts()): the_post(); ?>
             <!-- Post preview-->
             <div class="post-preview">
-              <a href="post.html">
+              <a href="<?php the_permalink(); ?>">
                 <h2 class="post-title">
                   <?php the_title(); ?>
                 </h2>
@@ -67,7 +67,8 @@
                 </h3>
               </a>
               <p class="post-meta">
-                <?php the_time(get_option('date_format')) ?>
+                Posted by <?php the_author(); ?>
+                on <?php the_time(get_option('date_format')) ?>
               </p>
             </div>
             <!-- Divider-->
