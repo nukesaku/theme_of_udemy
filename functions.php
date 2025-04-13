@@ -1,6 +1,12 @@
 <?php
 add_action('init', function () {
   add_theme_support('post-thumbnails');
+  add_theme_support('title-tag'); // こちら動画の解説にないが、テーマのタイトルを自動で取得してくれる
+
+  // メニューをサポート
+  register_nav_menus([
+    'global_nav' => 'グローバルナビゲーション',
+  ]);
 });
 function get_eyecatch_with_default() {
   if (has_post_thumbnail()) {
