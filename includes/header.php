@@ -8,6 +8,9 @@
       Menu
       <i class="fas fa-bars"></i>
     </button>
+    <?php wp_nav_menu([
+      'theme_location' => 'global_nav'
+    ]); ?>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ms-auto py-4 py-lg-0">
         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">ホーム</a></li>
