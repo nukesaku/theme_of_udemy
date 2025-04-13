@@ -8,3 +8,5 @@
 [reference](https://developer.wordpress.org/reference/)
 ### 日本語リファレンス
 [日付と時刻の書式](https://ja.wordpress.org/support/article/formatting-date-and-time/)
+### テーマユニットテストデータ
+[テーマユニットテストデータ](https://github.com/jawordpressorg/theme-test-data-ja)
