@@ -14,3 +14,17 @@ function get_eyecatch_with_default() {
 
   return $img;
 }
+
+if (!function_exists('dd')) {
+  function dd(...$vars) {
+    foreach ($vars as $var) {
+        ob_start();                  // 出力バッファリング開始
+        var_dump($var);              // 画面に出さずメモリに出力
+        $output = ob_get_clean();    // バッファから文字列として取得し、バッファ終了
+
+        // htmlspecialcharsでHTML無害化し、preタグで整形して出力
+        echo '<pre>' . htmlspecialchars($output, ENT_QUOTES, 'UTF-8') . '</pre>';
+    }
+    die; // Laravelと同様、即スクリプト停止
+  }
+}

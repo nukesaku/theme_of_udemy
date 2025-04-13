@@ -54,7 +54,23 @@
             <hr class="my-4" />
           <?php endwhile; ?>
           <!-- Pager-->
-          <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+          <div class="d-flex justify-content-between mb-4">
+            <?php
+              $link = get_previous_posts_link('← 新しい記事へ');
+              if ($link) {
+                $link = str_replace('<a', '<a class="btn btn-primary text-uppercase"', $link);
+                echo $link;
+              }
+            ?>
+
+            <?php
+              $link = get_next_posts_link('古い記事へ →');
+              if ($link) {
+                $link = str_replace('<a', '<a class="btn btn-primary text-uppercase"', $link);
+                echo $link;
+              }
+            ?>
+          </div>
         <?php else: ?>
           <p>記事が見つかりませんでした</p>
         <?php endif ?>
