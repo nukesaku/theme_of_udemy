@@ -29,7 +29,7 @@
             </a>
           </li>
         </ul>
-        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
+        <div class="small text-center text-muted fst-italic">Copyright &copy; nukesaku 2025, All Rights Reserved.</div>
       </div>
     </div>
   </div>
